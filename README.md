@@ -18,5 +18,5 @@
 
 ## RAG-Project
 
-- Bản hoàn chỉnh từ DemoPage/RAGWEB
+- Bản chỉnh sửa từ DemoPage/RAGWEB
 - Sử dụng thư viện ReactJs
