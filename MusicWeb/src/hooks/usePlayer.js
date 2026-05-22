@@ -1,4 +1,6 @@
-function usePlayer() {
+import { useState, useEffect, useRef } from "react";
+import { SONGS } from "../constants/data.js";
+export default function usePlayer() {
   const [currentSong, setCurrentSong] = useState(SONGS[0]);
   const [playing, setPlaying] = useState(false);
   const [progress, setProgress] = useState(28);

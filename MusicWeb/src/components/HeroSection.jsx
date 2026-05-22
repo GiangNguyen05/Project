@@ -1,4 +1,7 @@
-function HeroSection({ player }) {
+import { STATS, SONGS } from "../constants/data.js";
+import { BtnGhost, BtnPrimary, IconPause, IconPlay } from "./UI.jsx";
+import useResponsive from "../hooks/useResponsive.js";
+export default function HeroSection({ player }) {
   const { isMobile, isTablet } = useResponsive();
   const stacked = isMobile || isTablet;
   const { currentSong, playing, progress, toggle, play, seekFromEvent } =
@@ -93,19 +96,7 @@ function HeroSection({ player }) {
               marginBottom: 22,
             }}
           >
-            Nghe nhạc
-            <br />
-            <span
-              style={{
-                background: "linear-gradient(90deg,#00F5FF,#0080ff,#00F5FF)",
-                backgroundSize: "200% auto",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                animation: "shimmer 3s linear infinite",
-              }}
-            >
-              không giới hạn
-            </span>
+            Nghe nhạc không giới hạn
           </h1>
 
           <p

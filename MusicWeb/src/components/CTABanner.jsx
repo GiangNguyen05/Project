@@ -1,4 +1,6 @@
-function CTABanner() {
+import { Logo, BtnGhost, BtnPrimary } from "./UI.jsx";
+import useResponsive from "../hooks/useResponsive.js";
+export function CTABanner() {
   const { isMobile } = useResponsive();
   return (
     <section style={{ padding: isMobile ? "40px 20px" : "80px 40px" }}>
@@ -44,13 +46,10 @@ function CTABanner() {
               lineHeight: 1.15,
             }}
           >
-            Âm nhạc không
-            <br />
-            biên giới
+            Âm nhạc chill
           </h2>
           <p style={{ color: "#777", fontSize: 15, maxWidth: 400 }}>
-            Đăng ký ngay hôm nay — miễn phí 3 tháng Premium, không cần thẻ ngân
-            hàng.
+            Đăng ký ngay hôm nay
           </p>
         </div>
         <div
@@ -63,7 +62,7 @@ function CTABanner() {
     </section>
   );
 }
-function Footer() {
+export function Footer() {
   return (
     <footer
       style={{
@@ -82,9 +81,7 @@ function Footer() {
       >
         <Logo size="sm" />
       </div>
-      <p style={{ color: "#2a2a2a", fontSize: 13 }}>
-        © 2025 Musicforme. Tất cả quyền được bảo lưu.
-      </p>
+      <p style={{ color: "#2a2a2a", fontSize: 13 }}>© 2026 MusicWeb.</p>
     </footer>
   );
 }

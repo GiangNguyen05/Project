@@ -1,22 +1,39 @@
-# Demo project
+# Technologies Used
 
 ## AI
 
-- Các project khi dùng code xen kẻ sử dụng AI để build
-- Áp dụng AI vào dự án
+- AI Assisted Development
+- Prompt Engineering
+- AI Workflow Integration
+
+---
 
 ## Code
 
-- Code thuần không áp dụng AI và các framework
-- Áp dụng cốt lõi đã nắm được để thực hiện
-- Sử dụng HTML CSS
+- HTML5
+- CSS3
+
+---
 
 ## DemoPage
 
-- Code thuần không sử dụng AI trong quá trình code (AI chỉ đóng vai trò lấy template)
-- Sử dụng HTML/CSS và Javascript
+- HTML5
+- CSS3
+- Javascript (ES6+)
+
+---
 
 ## RAG-Project
 
-- Bản chỉnh sửa từ DemoPage/RAGWEB
-- Sử dụng thư viện ReactJs
+- ReactJS
+- Javascript (ES6+)
+- CSS3 / SCSS
+
+---
+
+## GPortfolio
+
+- HTML5
+- CSS3
+- Javascript (ES6+)
+- ReactJS

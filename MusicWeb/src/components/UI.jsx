@@ -1,4 +1,4 @@
-function Waveform({ active }) {
+export function Waveform({ active }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 2, height: 20 }}>
       {[...Array(5)].map((_, i) => (
@@ -19,14 +19,14 @@ function Waveform({ active }) {
     </div>
   );
 }
-function IconPlay({ size = 16, color = "#000" }) {
+export function IconPlay({ size = 16, color = "#000" }) {
   return (
     <svg width={size} height={size} fill={color} viewBox="0 0 24 24">
       <polygon points="5,3 19,12 5,21" />
     </svg>
   );
 }
-function IconPause({ size = 16, color = "#000" }) {
+export function IconPause({ size = 16, color = "#000" }) {
   return (
     <svg width={size} height={size} fill={color} viewBox="0 0 24 24">
       <rect x="6" y="4" width="4" height="16" />
@@ -34,7 +34,7 @@ function IconPause({ size = 16, color = "#000" }) {
     </svg>
   );
 }
-function BtnPrimary({ children, onClick, style = {} }) {
+export function BtnPrimary({ children, onClick, style = {} }) {
   return (
     <button
       onClick={onClick}
@@ -59,7 +59,7 @@ function BtnPrimary({ children, onClick, style = {} }) {
     </button>
   );
 }
-function BtnGhost({ children, onClick, style = {} }) {
+export function BtnGhost({ children, onClick, style = {} }) {
   return (
     <button
       onClick={onClick}
@@ -80,7 +80,7 @@ function BtnGhost({ children, onClick, style = {} }) {
     </button>
   );
 }
-function SectionHeader({ tag, title, onMore }) {
+export function SectionHeader({ tag, title, onMore }) {
   return (
     <div
       style={{
@@ -136,7 +136,7 @@ function SectionHeader({ tag, title, onMore }) {
     </div>
   );
 }
-function Logo({ size = "md" }) {
+export function Logo({ size = "md" }) {
   const d = size === "sm" ? { icon: 28, text: 16 } : { icon: 32, text: 18 };
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -178,7 +178,7 @@ function Logo({ size = "md" }) {
           letterSpacing: "-0.5px",
         }}
       >
-        Music<span style={{ color: "#00F5FF" }}>for</span>me
+        MusicWeb
       </span>
     </div>
   );

@@ -1,4 +1,7 @@
-function TopCharts({ player }) {
+import { SONGS } from "../constants/data.js";
+import { SectionHeader, Waveform } from "./UI.jsx";
+import useResponsive from "../hooks/useResponsive.js";
+export default function TopCharts({ player }) {
   const { isMobile } = useResponsive();
   const { currentSong, playing, play } = player;
   return (

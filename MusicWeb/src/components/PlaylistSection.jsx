@@ -1,4 +1,8 @@
-function PlaylistSection() {
+import { PLAYLISTS } from "../constants/data.js";
+import { SectionHeader } from "./UI.jsx";
+import useResponsive from "../hooks/useResponsive.js";
+
+export default function PlaylistSection() {
   const { isMobile, isTablet } = useResponsive();
   const cols = isMobile ? 2 : isTablet ? 3 : 4;
   return (

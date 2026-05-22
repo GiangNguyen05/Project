@@ -1,3 +1,13 @@
+import { useState } from "react";
+import usePlayer from "./hooks/usePlayer";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import TopCharts from "./components/TopCharts";
+import PlaylistSection from "./components/PlaylistSection";
+import ArtistSection from "./components/ArtistSection";
+import MiniPlayer from "./components/MiniPlayer";
+import { CTABanner, Footer } from "./components/CTABanner";
+
 export default function App() {
   const [activeNav, setActiveNav] = useState("trang-chu");
   const player = usePlayer();

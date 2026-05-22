@@ -1,4 +1,4 @@
-const SONGS = [
+export const SONGS = [
   {
     id: 1,
     title: "Nơi Này Có Anh",
@@ -48,7 +48,7 @@ const SONGS = [
     cover: "https://picsum.photos/seed/song6/80/80",
   },
 ];
-const ARTISTS = [
+export const ARTISTS = [
   {
     id: 1,
     name: "Sơn Tùng M-TP",
@@ -85,7 +85,7 @@ const ARTISTS = [
     img: "https://picsum.photos/seed/art5/200/200",
   },
 ];
-const PLAYLISTS = [
+export const PLAYLISTS = [
   {
     id: 1,
     name: "V-Pop Đỉnh Nóc",
@@ -111,13 +111,13 @@ const PLAYLISTS = [
     img: "https://picsum.photos/seed/pl4/300/300",
   },
 ];
-const NAV_LINKS = [
+export const NAV_LINKS = [
   { label: "Trang Chủ", key: "trang-chu" },
   { label: "Khám Phá", key: "kham-pha" },
   { label: "Nghệ Sĩ", key: "nghe-si" },
   { label: "BXH", key: "bxh" },
 ];
-const STATS = [
+export const STATS = [
   { num: "50M+", label: "Bài hát" },
   { num: "12M+", label: "Người dùng" },
   { num: "4K+", label: "Nghệ sĩ" },

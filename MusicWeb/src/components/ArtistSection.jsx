@@ -1,4 +1,7 @@
-function ArtistSection() {
+import { ARTISTS } from "../constants/data.js";
+import { SectionHeader } from "./UI.jsx";
+import useResponsive from "../hooks/useResponsive.js";
+export default function ArtistSection() {
   const { isMobile, isTablet } = useResponsive();
   const cols = isMobile ? 2 : isTablet ? 3 : 5;
   const visible = isMobile ? 4 : ARTISTS.length;

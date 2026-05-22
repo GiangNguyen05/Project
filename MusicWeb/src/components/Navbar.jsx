@@ -1,4 +1,9 @@
-function Navbar({ activeNav, onNav }) {
+import { NAV_LINKS } from "../constants/data.js";
+import { Logo, BtnPrimary } from "./UI.jsx";
+import { useState } from "react";
+import useResponsive from "../hooks/useResponsive.js";
+import useScrolled from "../hooks/useScrolled.js";
+export default function Navbar({ activeNav, onNav }) {
   const scrolled = useScrolled(60);
   const { isMobile } = useResponsive();
   const [open, setOpen] = useState(false);
@@ -47,7 +52,7 @@ function Navbar({ activeNav, onNav }) {
         )}
         {!isMobile && (
           <BtnPrimary style={{ padding: "8px 20px", fontSize: 13 }}>
-            Bắt Đầu Miễn Phí
+            Bắt Đầu
           </BtnPrimary>
         )}
 
@@ -127,7 +132,7 @@ function Navbar({ activeNav, onNav }) {
           <BtnPrimary
             style={{ marginTop: 20, width: "100%", justifyContent: "center" }}
           >
-            Bắt Đầu Miễn Phí
+            Bắt Đầu
           </BtnPrimary>
         </div>
       )}

@@ -1,4 +1,13 @@
-function MiniPlayer({ song, playing, onToggle, progress, onSeek }) {
+import { IconPause, IconPlay } from "./UI.jsx";
+import useResponsive from "../hooks/useResponsive.js";
+
+export default function MiniPlayer({
+  song,
+  playing,
+  onToggle,
+  progress,
+  onSeek,
+}) {
   const { isMobile } = useResponsive();
   const [totalMin, totalSec] = song.duration.split(":").map(Number);
   const elapsed = Math.floor((progress / 100) * (totalMin * 60 + totalSec));
